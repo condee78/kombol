@@ -1,7 +1,11 @@
 class NavBar extends HTMLElement {
+  connectedCallback() {
+    this.render();
+  }
+
   render() {
-    "Testing nav-bar";
+    this.innerHTML = "<div>test navbar</div";
   }
 }
 
-customElements.define("nav-bar", NavnBar);
+customElements.define("nav-bar", NavBar);
